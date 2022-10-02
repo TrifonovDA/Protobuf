@@ -1,0 +1,19 @@
+syntax = 'proto3';
+
+message ParamValue {
+  oneof value_oneof{
+    double double_name = 1;
+    int64 int_name = 2;
+    bool bool_name = 3;
+    string string_name = 4;
+  }
+}
+
+message SellerParams {
+  message Item {
+    int64 seller_id = 1;
+    double rating = 2;
+    map<string, ParamValue> params = 3;
+  }
+  repeated Item result = 1;
+}
