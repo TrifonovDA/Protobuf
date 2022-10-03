@@ -1,4 +1,4 @@
-module JSON_AND_HTTP
+module github.com/TrifonovDA/Protobuf
 
 go 1.18
 

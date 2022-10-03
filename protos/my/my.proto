@@ -1,5 +1,10 @@
 syntax = 'proto3';
 
+package protofile;
+
+option  go_package = "github.com/TrifonovDA/Protobuf/protos/my";
+
+
 message ParamValue {
   oneof value_oneof{
     double double_name = 1;
